@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900&amp;subset=cyrillic" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <form action="/"   method="post">
+      <div id="container" class="calc">
+
+
+        <div class="calc__title">
+          <h2><span>Скидка</span> на все окна</h2>
+          <p>
+            Закажите замер с сайта и получите <b>скидку 30%</b> от стоимости окна
+          </p>
+        </div>
+
+
+      <div id="calc">
+
+        <div class="calc__scroll">
+          <div class="img_scroll"></div>
+          <a id="okno1" class="okno1" href="#calc"><img alt="Двухстворчатое" src="./okno1.png"></a>
+          <a id="okno2" class="okno2" href="#calc"><img alt="Трехстворчатое" src="./okno2.png"></a>
+          <a id="okno3" class="okno3" href="#calc"><img alt="Балконный блок" src="./okno3.png"></a>
+          <input type="hidden" name="TYPE" value="">
+        </div>
+
+
+          <div class="selectlist">
+            <label class="name">Профиль
+              <select id="profil" size="1" name="PROFIL">
+                <option title="SCHMITZ Classic" id="classik" value="6445">SCHMITZ Classic 3-х камерный</option>
+                <option title="SCHMITZ Lux 70" id="lux" value="6845">SCHMITZ Lux 70 5-ти камерный</option>
+                <option title="SCHMITZ Premium 70" id="premium" value="7345">SCHMITZ Premium 70 6-ти камерный</option>
+              </select>
+            </label>
+            <input type="hidden" name="PROFIL_NAME" value="SCHMITZ Classic">
+            <label class="name">Дом
+              <select id="dom" size="1" name="DOM">
+                <option title="Кирпичный" id="kirpich" value="2175">Кирпичный</option>
+                <option title="Панельный" id="panel" value="1175">Панельный</option>
+              </select>
+            </label>
+            <input type="hidden" name="DOM_NAME" value="Кирпичный">
+          </div>
+
+
+          <div class="checklist">
+            <input id="montag" type="checkbox" class="checkbox" name="MONTAG">
+              <label for="montag" class="name">Монтаж</label>
+
+            <input id="otkos" type="checkbox" class="checkbox" name="OTKOS" value="1200">
+              <label for="otkos" class="name">Откосы</label>
+
+            <input id="setka" type="checkbox" class="checkbox" name="SETKA" value="500">
+              <label for="setka" class="name">Москитная сетка</label>
+          </div>
+          <div class="summa">
+            <span id="raschet">6445</span > руб.
+            <p class="price-des">* Cтоимость указана с учетем скидки</p>
+          </div>
+
+
+          <div class="calc__form">
+            <input type="hidden" name="RESULT" value="6445">
+            <div class="calcContact">
+
+            <label class="name">
+              <input placeholder="Ваше имя" required class="st" name="NAME" type="text" value="">
+            </label>
+
+            <label class="phone">
+              <input placeholder="Телефон" required class="st" name="TEL" type="text" value="">
+            </label>
+
+            <label class="name">
+              <input placeholder="Адрес" required class="st" name="ADRESS" type="text" value="">
+            </label>
+
+            <label>
+              <input type="submit" name="SEND_FORM" class="sub" value="Заказать" />
+            </label>
+            </div>
+          </div>
+          <p class="price-des">Ваши данные надежно защищены</p>
+
+      </div>
+    </div>
+  </form>
+
+  </main>
+  <script src="./script/jquery.js"></script>
+  <script src="./script/main.js"></script>
+</body>
+</html>

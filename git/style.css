@@ -1,0 +1,195 @@
+a {
+text-decoration: none;
+color: inherit;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+#container{
+  width: 1170px;
+  margin: auto;
+  box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.29);
+}
+.calc{
+  padding: 40px 0;
+}
+#calc{
+  width: 970px;
+  margin: auto;
+  color: #000;
+}
+.calc__title{
+  text-align: center;
+  color: #000;
+}
+.calc__title h2{
+  font-size: 30px;
+  font-weight: 900;
+}
+.calc__title p{
+  font-size: 18px;
+}
+/* WINDOWS__SELECT__SCROLL */
+
+.img_scroll{
+width: 33%;
+position: absolute;
+left: 0px;
+bottom: -2px;
+top: -2px;
+border-bottom: 2px solid #1c47e7;
+background: rgba(142, 200, 224, 0.13);
+}
+.calc__scroll a:after {
+content: "Двухстворчатое окно";
+position: absolute;
+left: 0;
+width: 100%;
+bottom: -34px;
+}
+a#okno2:after{
+  content:"Трехстворчатое";
+}
+a#okno3:after{
+  content:"Балконный блок";
+}
+.calc__scroll {
+position: relative;
+width: 100%;
+padding: 50px 0 70px;
+margin:50px 0;
+border-bottom: 2px solid #ddd;
+border-top: 2px solid #ddd;
+font-size: 17px;
+}
+.calc__scroll img{
+  width: 130px;
+  height: 110px;
+}
+.calc__scroll a {
+border: none;
+position: relative;
+display: inline-block;
+width: 33%;
+height: 132px;
+text-align: center;
+border-radius: 3px;
+color: #121212;
+}
+
+/* CALCULATOR */
+
+#calc select {
+font-size: 16px;
+border-color: #a2a2a2;
+border-radius: 7px;
+box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+background: #fff url(./select.png) 98% center no-repeat;
+-webkit-appearance: none;
+-moz-appearance: none;
+text-indent: 0.01px;
+padding: 3px 25px 3px 10px;
+-ms-appearance: none;
+outline: none;
+appearance: none!important;
+}
+.checkbox:not(checked) {
+position: absolute;
+opacity: 0;
+left: -99999px;
+}
+.checkbox:not(checked) + label {
+position: relative;
+padding: 0 0 0 62px;
+}
+.checkbox + label {
+cursor: pointer;
+}
+.calc label {
+margin: 0px 45px 0 0;
+color: #131313;
+font-weight: 400;
+}
+.checkbox:checked + label:before {
+background: #1c47e7;
+color: #111;
+}
+.checkbox:not(checked) + label:before {
+content: '';
+position: absolute;
+top: 0px;
+left: 0;
+width: 50px;
+height: 25px;
+border-radius: 13px;
+background: #bbb;
+}
+.checkbox:checked + label:after {
+left: 26px;
+opacity: 1;
+}
+.checkbox:not(checked) + label:after {
+content: '';
+position: absolute;
+top: 2px;
+left: 4px;
+width: 20px;
+height: 20px;
+border-radius: 10px;
+background: #FFF;
+transition: all .2s;
+opacity: 0.8;
+}
+
+/* OTHER */
+
+.checklist{
+  padding: 50px 0;
+}
+#raschet{
+  font-size: 44px;
+  font-weight: 900;
+}
+.summa {
+font-size: 25px;
+width: 240px;
+float: right;
+margin-top: -80px;
+}
+.price-des{
+  font-size: 12px;
+  color:#757474;
+  margin: 0;
+}
+.calcContact input{
+  border:0;
+  border-bottom: 2px solid #b2b2b2;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.calcContact input[name=SEND_FORM]:hover{
+  background-color: #fff;
+  color: #26a65b;
+  box-shadow: 0px 6px 24px -10px rgba(0, 0, 0, 0.57);
+  cursor:pointer;
+}
+.calcContact input[name=SEND_FORM]:active{
+  box-shadow: 0px 6px 24px 0px rgba(36, 166, 91, 0.57);
+}
+.calcContact input:focus{
+  border-bottom: 2px solid #1c47e7;
+}
+.calcContact input[name=SEND_FORM]{
+  font-size: 18px;
+  color:#fff;
+  font-weight: bold;
+  padding: 13px 50px;
+  border: 2px solid #26a65b;
+  background-color: #26a65b;
+  border-radius: 7px;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.57);
+  transition: 0.25s;
+}
